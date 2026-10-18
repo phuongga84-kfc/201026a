@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Món Quà 20-10 Dành Riêng Cho Bạn 🌸</title>
+
+  <!-- Google Fonts: Luxury Romantic Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="view.css">
+</head>
+<body>
+  <!-- 3D WebGL Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Ambient Backdrop -->
+  <div class="ambient-vignette"></div>
+  <div class="ambient-glow"></div>
+
+  <!-- Top Navigation (Clean & Minimalist for Viewer) -->
+  <header class="top-bar">
+    <div class="brand-badge">
+      <span class="sparkle-icon">✨</span>
+      <span class="brand-text">20 · 10 · Special Gift</span>
+    </div>
+
+    <div class="top-actions">
+      <!-- Music Toggle Button -->
+      <button id="btn-music" class="icon-btn" title="Bật/Tắt Nhạc Lãng Mạn" aria-label="Bật/Tắt Nhạc">
+        <span class="music-icon">🎵</span>
+        <div class="sound-wave">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </button>
+
+      <!-- Fullscreen Button -->
+      <button id="btn-fullscreen" class="icon-btn" title="Toàn Màn Hình" aria-label="Toàn Màn Hình">
+        <span class="fs-icon">⛶</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- LUXURY 3D INTERACTIVE ENVELOPE (FRENCH HAUTE-COUTURE STYLE) -->
+  <div id="envelope-stage" class="envelope-stage">
+    <div id="luxury-envelope" class="envelope-wrapper">
+      <!-- Envelope Base & Interior -->
+      <div class="envelope-pocket-back">
+        <div class="envelope-silk-lining"></div>
+      </div>
+
+      <!-- Letter Paper inside envelope with peeking gold seal -->
+      <div id="envelope-letter-peek" class="envelope-letter-peek">
+        <div class="peek-border"></div>
+        <div class="peek-tag">✨ 20 · 10 · Special Gift ✨</div>
+        <div class="peek-lines">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Pocket Side & Bottom Flaps with Gold Foil Trims -->
+      <div class="envelope-pocket-left"></div>
+      <div class="envelope-pocket-right"></div>
+      <div class="envelope-pocket-bottom"></div>
+
+      <!-- Elegant Gold Satin Ribbon -->
+      <div class="envelope-ribbon ribbon-h"></div>
+      <div class="envelope-ribbon ribbon-v"></div>
+
+      <!-- 3D Foldable Top Flap with Metallic Gold Wax Seal -->
+      <div id="envelope-top-flap" class="envelope-top-flap">
+        <div class="flap-triangle"></div>
+        <div class="flap-gold-rim"></div>
+        <!-- 3D Metallic Golden Wax Seal -->
+        <div id="envelope-wax-seal" class="wax-seal-luxury">
+          <div class="seal-bevel">
+            <span class="seal-icon">💖</span>
+            <span class="seal-title">20·10</span>
+          </div>
+          <div class="seal-glow-ring"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elegant Floating Click Hint (Minimalist & Sleek) -->
+    <div id="envelope-prompt" class="envelope-click-prompt">
+      <div class="prompt-pill">
+        <span class="prompt-sparkle">✨</span>
+        <span class="prompt-text">Chạm vào phong thư để mở quà 20/10</span>
+        <span class="prompt-sparkle">💌</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Open Letter Glassmorphic Modal (Clean, No Recipient Tags) -->
+  <div id="letter-modal" class="letter-modal hidden">
+    <div class="letter-backdrop"></div>
+    <div class="letter-container">
+      
+      <!-- Wax Ribbon -->
+      <div class="letter-seal-ribbon">
+        <div class="seal-circle">
+          <span>20·10</span>
+        </div>
+      </div>
+
+      <!-- Letter Content Sheet -->
+      <div class="letter-sheet">
+        <!-- Corner Flourishes -->
+        <div class="corner-flourish top-left"></div>
+        <div class="corner-flourish top-right"></div>
+        <div class="corner-flourish bottom-left"></div>
+        <div class="corner-flourish bottom-right"></div>
+
+        <!-- Letter Header -->
+        <div class="letter-header">
+          <p class="letter-subhead">Gửi gắm trọn vẹn yêu thương</p>
+          <h1 id="letter-recipient-title" class="letter-title">Gửi Người Phụ Nữ Tôi Yêu Thương Nhất,</h1>
+        </div>
+
+        <!-- Letter Body Text -->
+        <div class="letter-body">
+          <p id="letter-paragraph-1" class="type-text">
+            Nhân ngày Phụ nữ Việt Nam 20/10, chúc em luôn luôn xinh đẹp, rạng rỡ như đóa hồng sớm mai ngát hương và ngập tràn hạnh phúc.
+          </p>
+          <p id="letter-paragraph-2" class="type-text">
+            Cảm ơn vì đã luôn mang đến sự ấm áp, nụ cười ngọt ngào và những điều tuyệt vời nhất cho thế giới này. Mong em mỗi ngày đều bình an, được yêu thương và nâng niu trọn vẹn!
+          </p>
+          <p id="letter-quote" class="type-quote">
+            "Bạn xứng đáng nhận được tất cả những điều dịu dàng và diệu kỳ nhất của cuộc sống này."
+          </p>
+        </div>
+
+        <!-- Letter Signature -->
+        <div class="letter-footer">
+          <div class="signature-line">
+            <span class="signature-text">Thương mến gửi trao,</span>
+            <span id="letter-signature-name" class="signature-name">20 · 10 · Special Gift 🌸</span>
+          </div>
+        </div>
+
+        <!-- The Magical Dissolve Button -->
+        <div class="letter-actions">
+          <button id="btn-dissolve" class="magic-btn">
+            <span class="btn-glow-layer"></span>
+            <span class="btn-particles-sparkle">✨</span>
+            <span class="btn-text">Khép lại & Đón nhận điều kỳ diệu 💖</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Floating Minimalist Bar for Viewer (No "Cây ước nguyện" text!) -->
+  <div id="viewer-controls" class="viewer-controls hidden">
+    <div class="viewer-hint-pill">
+      <span>🖱️ Xoay 360° để ngắm nhìn · Chạm vào các lồng đèn để đọc lời chúc ✨</span>
+    </div>
+    <button id="btn-reopen-letter" class="reopen-letter-btn" title="Đọc lại lá thư">
+      <span>📜 Đọc Lại Thư</span>
+    </button>
+  </div>
+
+  <!-- Wish Reader Popup Card -->
+  <div id="wish-reader-card" class="wish-reader-card hidden">
+    <button class="reader-close-btn" id="btn-close-reader">✕</button>
+    <div class="reader-header">
+      <span class="reader-lantern-icon">🏮</span>
+      <h4>Lời Chúc Dành Cho Bạn</h4>
+    </div>
+    <p id="reader-content" class="reader-content"></p>
+    <div id="reader-author" class="reader-author"></div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-message" class="toast-message"></div>
+
+  <!-- Libraries -->
+  <script src="libs/three.min.js"></script>
+  <script src="libs/OrbitControls.js"></script>
+  <script src="libs/tween.umd.js"></script>
+
+  <!-- Viewer Logic -->
+  <script src="view.js"></script>
+</body>
+</html>

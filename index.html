@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Tạo Quà 20-10 🌸 Cây Tình Yêu & Trái Tim Ánh Sáng 3D</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Ambient Cosmic Background -->
+  <div class="ambient-stars"></div>
+  <div class="ambient-glow"></div>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="studio-header">
+      <div class="brand-group">
+        <span class="brand-icon">✨</span>
+        <div>
+          <h1 class="brand-title">Studio Tạo Quà 20-10</h1>
+          <p class="brand-tagline">Thiết kế món quà 3D không gian mờ ảo lãng mạn dành riêng cho người phụ nữ bạn yêu thương</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="btn-quick-preview" class="action-btn secondary">
+          <span>👁️ Xem Thử Ngay</span>
+        </button>
+        <button id="btn-export-top" class="action-btn primary pulse">
+          <span>✨ Xuất Link Cho Người Nhận 💌</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Workspace Grid -->
+    <main class="studio-grid">
+      <!-- Left Column: Customization Forms -->
+      <section class="config-panel">
+        
+        <!-- CARD 1: Edit Letter Content -->
+        <div class="config-card">
+          <div class="card-header">
+            <span class="card-icon">💌</span>
+            <div>
+              <h3>1. Soạn Nội Dung Lá Thư 20-10</h3>
+              <p>Nội dung này sẽ xuất hiện trên thiệp kính mờ khi người nhận mở phong thư</p>
+            </div>
+          </div>
+          <div class="card-body form-grid">
+            <div class="form-group">
+              <label for="cfg-title">Tiêu đề người nhận:</label>
+              <input type="text" id="cfg-title" value="Gửi Người Phụ Nữ Tôi Yêu Thương Nhất," maxlength="80">
+            </div>
+
+            <div class="form-group">
+              <label for="cfg-p1">Lời chúc đoạn 1:</label>
+              <textarea id="cfg-p1" rows="3" maxlength="280">Nhân ngày Phụ nữ Việt Nam 20/10, chúc em luôn luôn xinh đẹp, rạng rỡ như đóa hồng sớm mai ngát hương và ngập tràn hạnh phúc.</textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="cfg-p2">Lời chúc đoạn 2:</label>
+              <textarea id="cfg-p2" rows="3" maxlength="280">Cảm ơn vì đã luôn mang đến sự ấm áp, nụ cười ngọt ngào và những điều tuyệt vời nhất cho thế giới này. Mong em mỗi ngày đều bình an, được yêu thương và nâng niu trọn vẹn!</textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="cfg-quote">Câu danh ngôn / thông điệp nổi bật:</label>
+              <input type="text" id="cfg-quote" value="&quot;Bạn xứng đáng nhận được tất cả những điều dịu dàng và diệu kỳ nhất của cuộc sống này.&quot;" maxlength="140">
+            </div>
+
+            <div class="form-group">
+              <label for="cfg-signature">Chữ ký / Lời kết:</label>
+              <input type="text" id="cfg-signature" value="20 · 10 · Với tất cả sự trân trọng 🌸" maxlength="60">
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: Choose Target Shape -->
+        <div class="config-card">
+          <div class="card-header">
+            <span class="card-icon">🔮</span>
+            <div>
+              <h3>2. Chọn Hình Dáng Hạt Ánh Sáng (Sau khi tan biến thư)</h3>
+              <p>Khi đóng thư lại, toàn bộ lá thư sẽ tan biến thành 28.000 hạt sáng tạo thành hình bạn chọn</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="shape-options">
+              <label class="shape-choice">
+                <input type="radio" name="cfg-shape" value="heart">
+                <div class="choice-card">
+                  <div class="choice-icon">💖</div>
+                  <div class="choice-title">Trái Tim Neon</div>
+                  <div class="choice-desc">Hạt sáng tụ lại thành Trái Tim lấp lánh (như ảnh mẫu), đập nhịp tim ấm áp</div>
+                </div>
+              </label>
+
+              <label class="shape-choice">
+                <input type="radio" name="cfg-shape" value="tree" checked>
+                <div class="choice-card">
+                  <div class="choice-icon">🌳</div>
+                  <div class="choice-title">Cây Ước Nguyện 3D</div>
+                  <div class="choice-desc">Hạt sáng vươn lên thành cây hoa 3D với cành vàng hồng và cánh hoa bay lượn</div>
+                </div>
+              </label>
+
+              <label class="shape-choice">
+                <input type="radio" name="cfg-shape" value="both">
+                <div class="choice-card">
+                  <div class="choice-icon">💖 ➔ 🌳</div>
+                  <div class="choice-title">Cả Hai Kết Hợp</div>
+                  <div class="choice-desc">Đầu tiên kết thành Trái Tim đập 3 nhịp, sau đó bung nở thành Cây hoa 3D</div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: Choose Color Theme -->
+        <div class="config-card">
+          <div class="card-header">
+            <span class="card-icon">🎨</span>
+            <div>
+              <h3>3. Tông Màu Ánh Sáng Không Gian</h3>
+              <p>Màu sắc chủ đạo của các hạt sáng, hoa và ánh hào quang</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="color-options">
+              <label class="color-choice">
+                <input type="radio" name="cfg-theme" value="pink" checked>
+                <div class="color-swatch pink">
+                  <span class="swatch-circle" style="background: #ff2a8d;"></span>
+                  <div class="color-text">
+                    <strong>Hồng Lãng Mạn (Sakura)</strong>
+                    <small>Sắc hồng neon rực rỡ chuẩn ảnh mẫu</small>
+                  </div>
+                </div>
+              </label>
+
+              <label class="color-choice">
+                <input type="radio" name="cfg-theme" value="gold">
+                <div class="color-swatch gold">
+                  <span class="swatch-circle" style="background: #fcd34d;"></span>
+                  <div class="color-text">
+                    <strong>Vàng Ánh Kim (Rose Gold)</strong>
+                    <small>Ánh vàng hổ phách quý phái, ấm áp</small>
+                  </div>
+                </div>
+              </label>
+
+              <label class="color-choice">
+                <input type="radio" name="cfg-theme" value="purple">
+                <div class="color-swatch purple">
+                  <span class="swatch-circle" style="background: #b5179e;"></span>
+                  <div class="color-text">
+                    <strong>Tím Huyền Ảo (Lavender)</strong>
+                    <small>Vũ trụ mộng mơ quyến rũ</small>
+                  </div>
+                </div>
+              </label>
+
+              <label class="color-choice">
+                <input type="radio" name="cfg-theme" value="cyan">
+                <div class="color-swatch cyan">
+                  <span class="swatch-circle" style="background: #48cae4;"></span>
+                  <div class="color-text">
+                    <strong>Lam Ngọc (Crystal)</strong>
+                    <small>Sắc xanh ngọc băng thanh khiết</small>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: Manage Hanging Wishes -->
+        <div class="config-card">
+          <div class="card-header">
+            <span class="card-icon">🏮</span>
+            <div>
+              <h3>4. Quản Lý Các Lời Chúc Treo</h3>
+              <p>Các lời chúc này sẽ kết thành lồng đèn treo trên cây/trái tim để người nhận bấm vào đọc</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <!-- List of current wishes -->
+            <div id="wishes-list" class="wishes-list">
+              <!-- Rendered via JS -->
+            </div>
+
+            <!-- Add New Wish Subform -->
+            <div class="add-wish-box">
+              <h4>+ Thêm Lời Chúc Treo Mới</h4>
+              <div class="add-wish-inputs">
+                <input type="text" id="new-wish-sender" placeholder="Tên người gửi (Ví dụ: Anh yêu, Con trai, Người thương...)" maxlength="40">
+                <textarea id="new-wish-text" rows="2" placeholder="Nội dung lời chúc ấm áp..." maxlength="180"></textarea>
+                <button type="button" id="btn-add-wish" class="add-wish-btn">Thêm Vào Cây / Trái Tim ✨</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Right Column: Live Summary & Export Card -->
+      <aside class="summary-panel">
+        <div class="sticky-card">
+          <div class="summary-banner">
+            <div class="banner-badge">🌸 20-10 SPECIAL EDITION</div>
+            <h2>Sẵn Sàng Trao Gửi Yêu Thương</h2>
+            <p>Trang xem cho người nhận sẽ hiển thị phong thư lấp lánh, sau khi mở thư sẽ tan biến thành hình bạn đã chọn. <strong>Tất cả chữ rườm rà và nút chỉnh sửa đã được lược bỏ hoàn toàn</strong> để người nhận có trải nghiệm cảm xúc nhất!</p>
+          </div>
+
+          <div class="preview-mini-card">
+            <div class="mini-title">Người nhận sẽ trải nghiệm:</div>
+            <ul class="experience-checklist">
+              <li>✨ Mở phong thư 3D pha lê lấp lánh</li>
+              <li>📜 Đọc trọn vẹn lời chúc bạn vừa soạn</li>
+              <li>💖 Thư tan biến thành <span id="summary-shape-text">Cây Ước Nguyện 3D</span></li>
+              <li>🎨 Tông màu <span id="summary-theme-text">Hồng Lãng Mạn (Sakura)</span></li>
+              <li>🏮 Đọc <span id="summary-wish-count">3 lời chúc</span> treo lấp lánh</li>
+              <li>🎵 Thưởng thức giai điệu du dương & xoay 360°</li>
+            </ul>
+          </div>
+
+          <div class="export-actions">
+            <button id="btn-export-main" class="export-huge-btn">
+              <span class="btn-stars">✨</span>
+              <span>XUẤT LINK GỬI TẶNG NGAY 💌</span>
+            </button>
+            <button id="btn-preview-bottom" class="preview-full-btn">
+              <span>👁️ Mở Xem Thử Trước Trong Tab Mới</span>
+            </button>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- EXPORT LINK MODAL -->
+  <div id="export-modal" class="export-modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button id="btn-close-modal" class="modal-close-btn">✕</button>
+      <div class="modal-icon">🎁</div>
+      <h2>Link Quà Tặng 20-10 Đã Sẵn Sàng!</h2>
+      <p class="modal-desc">Toàn bộ lời chúc, màu sắc và hình dạng bạn đã chọn được đóng gói hoàn chỉnh trong link dưới đây:</p>
+
+      <div class="link-copy-box">
+        <input type="text" id="shareable-link-input" readonly>
+        <button id="btn-copy-link" class="copy-btn">
+          <span>📋 Sao Chép Link</span>
+        </button>
+      </div>
+
+      <div class="modal-tips">
+        <p>💡 <strong>Cách gửi:</strong> Bạn chỉ cần copy link trên và gửi qua <strong>Zalo, Messenger, Tin nhắn</strong> cho người nhận. Người nhận bấm vào sẽ thấy ngay phong thư 3D tuyệt đẹp với lời chúc của riêng bạn!</p>
+      </div>
+
+      <div class="modal-footer-btns">
+        <a id="btn-open-link-direct" href="#" target="_blank" class="open-link-btn">
+          <span>🚀 Mở Xem Thử Trang Người Nhận Ngay ➔</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
